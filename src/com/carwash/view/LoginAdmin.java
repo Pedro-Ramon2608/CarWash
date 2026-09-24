@@ -10,41 +10,41 @@ public class LoginAdmin {
     private JPanel main;
     private JPanel center;
     private JPanel buttom;
-    private JTextField textNome;
-    private JPasswordField tetxSenha;
-    private JButton enviarButton;
-    private JButton voltarButton;
-    private JLabel dadosPreenchidos;
+    private JTextField fieldName;
+    private JPasswordField passwordField;
+    private JButton submitButton;
+    private JButton backButton;
+    private JLabel validatorFillData;
     private JCheckBox showPassword;
 
     public LoginAdmin() {
-        enviarButton.addActionListener(new ActionListener() {
+        submitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dadosPreenchidos.setText("");
+                validatorFillData.setText("");
 
-                String nome = textNome.getText();
-                String senha = tetxSenha.getText();
+                String name = fieldName.getText();
+                String password = String.valueOf(passwordField.getPassword());
 
-                if (nome.isEmpty() || senha.isEmpty()) {
-                    dadosPreenchidos.setText("Preencha todos os campos.");
+                if (name.isEmpty() || password.isEmpty()) {
+                    validatorFillData.setText("Preencha todos os campos.");
                 } else {
-                    String informationInvoicing = ManipulationFile.readAndLoginFile(nome, senha);
+                    String informationInvoicing = ManipulationFile.readAndLoginFile(name, password);
 
                     if  (informationInvoicing != null) {
                         redirectToMessageAdminInvoicing(informationInvoicing);
                     }
 
-                    dadosPreenchidos.setText("Nome ou Senha inválidos.");
-                    textNome.setText("");
-                    tetxSenha.setText("");
-                    textNome.requestFocus();
+                    validatorFillData.setText("Nome ou Senha inválidos.");
+                    fieldName.setText("");
+                    passwordField.setText("");
+                    fieldName.requestFocus();
                 }
 
             }
         });
 
-        voltarButton.addActionListener(new ActionListener() {
+        backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 redirectToMainCarWash();
@@ -55,9 +55,9 @@ public class LoginAdmin {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (showPassword.isSelected()) {
-                    tetxSenha.setEchoChar((char) 0);
+                    passwordField.setEchoChar((char) 0);
                 } else {
-                    tetxSenha.setEchoChar('•');
+                    passwordField.setEchoChar('•');
                 }
             }
         });

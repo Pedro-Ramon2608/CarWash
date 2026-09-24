@@ -8,24 +8,33 @@ public class MessageAdminInvoicing {
     private JPanel main;
     private JPanel top;
     private JPanel center;
-    private JLabel faturamento;
-    private JButton voltarParaOInicioButton;
+    private JLabel invoicing;
+    private JButton backToStartButton;
 
     public MessageAdminInvoicing() {
-        voltarParaOInicioButton.addActionListener(new ActionListener() {
+        backToStartButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                MainCarWash lavaRapido = new MainCarWash();
-                JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(main);
-                frame.setContentPane(lavaRapido.getMain());
-                frame.revalidate();
-                frame.repaint();
+                redirectToMainCarWash();
             }
         });
     }
 
+
+    /**
+     * Navigates the current window to the MainCarWash view.
+     */
+    public void redirectToMainCarWash() {
+        MainCarWash carWash = new MainCarWash();
+        JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(main);
+        frame.setContentPane(carWash.getMain());
+        frame.revalidate();
+        frame.repaint();
+    }
+
+
     public void pegarFaturamento(String dadosFaturamento) {
-        faturamento.setText("R$ " + dadosFaturamento);
+        invoicing.setText("R$ " + dadosFaturamento);
     }
 
     public JPanel getMain() {

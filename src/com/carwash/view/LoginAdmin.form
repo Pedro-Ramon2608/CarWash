@@ -52,7 +52,7 @@
               <text value="Login Admin"/>
             </properties>
           </component>
-          <component id="3e933" class="javax.swing.JTextField" binding="textNome">
+          <component id="3e933" class="javax.swing.JTextField" binding="fieldName">
             <constraints>
               <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
@@ -60,7 +60,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="93a45" class="javax.swing.JPasswordField" binding="tetxSenha">
+          <component id="93a45" class="javax.swing.JPasswordField" binding="passwordField">
             <constraints>
               <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
@@ -91,7 +91,7 @@
         </properties>
         <border type="none"/>
         <children>
-          <component id="5733f" class="javax.swing.JButton" binding="voltarButton" default-binding="true">
+          <component id="5733f" class="javax.swing.JButton" binding="backButton">
             <constraints>
               <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -102,7 +102,7 @@
               <text value="Voltar"/>
             </properties>
           </component>
-          <component id="1d0d8" class="javax.swing.JLabel" binding="dadosPreenchidos">
+          <component id="1d0d8" class="javax.swing.JLabel" binding="validatorFillData">
             <constraints>
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -112,7 +112,7 @@
               <text value=""/>
             </properties>
           </component>
-          <component id="f3bb" class="javax.swing.JButton" binding="enviarButton" default-binding="true">
+          <component id="f3bb" class="javax.swing.JButton" binding="submitButton">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
