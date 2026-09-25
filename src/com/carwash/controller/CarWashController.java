@@ -15,7 +15,7 @@ public class CarWashController {
      */
     public static boolean processCarWash(String name, String model, String licensePlate) {
 
-        if (name.trim().isEmpty() && model.trim().isEmpty() && licensePlate.trim().isEmpty()) {
+        if (name.trim().isEmpty() || model.trim().isEmpty() || licensePlate.trim().isEmpty()) {
             return false;
         }
 
