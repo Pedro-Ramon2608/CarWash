@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 public class UserMessage {
     private JPanel main;
     private JPanel center;
+    private JPanel buttom;
     private JButton backButton;
     private JLabel name;
     private JLabel modelCar;

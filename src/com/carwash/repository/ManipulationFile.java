@@ -5,7 +5,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class ManipulationFile {
-        private static final String FILE_PATH = "C:/Users/ADMIN/ganhosGeraisADM.txt";
+    private static final String DIR = System.getProperty("user.home") + File.separator + "carwash";
+    private static final String FILE_PATH = DIR + File.separator + "ganhosGeraisADM.txt";
 
     public static void createFile() {
         try {
