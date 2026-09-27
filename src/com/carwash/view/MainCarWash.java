@@ -1,11 +1,7 @@
 package com.carwash.view;
 
 /**
- * Initializes the graphical interface and loads the startup settings.
- *
- * @author Pedro Ramon <pedrorfariasljesus@gmail.com>
- * @version 1.0.0
- * @since 09/09/2026
+ * Main screen of the graphical interface.
  */
 
 import com.carwash.controller.CarWashController;
