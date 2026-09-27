@@ -1,15 +1,17 @@
 package com.carwash.view;
 
-/**
- * Main screen of the graphical interface.
- */
-
 import com.carwash.controller.CarWashController;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
+/**
+ * Main screen of the graphical interface.
+ *
+ * @author Pedro Ramon
+ * @version 1.0.0
+ */
 public class MainCarWash {
     private JPanel main;
     private JPanel top;
