@@ -73,7 +73,7 @@ public class MainCarWash {
 
 
     // Run application
-    public static void start(String[] args) {
+    public static void start() {
         JFrame frame = new JFrame("Lava Rápido");
         frame.setContentPane(new MainCarWash().main);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
